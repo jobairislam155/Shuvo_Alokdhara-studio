@@ -1,4 +1,7 @@
-const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+// The cloud name is public (it appears in every image URL). The fallback keeps
+// photos working on Vercel even if the env var was never added there, since
+// .env.local is git-ignored and does not get pushed to GitHub.
+const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'ak6gupc4';
 
 export const isCloudinaryConfigured = Boolean(CLOUD_NAME);
 
