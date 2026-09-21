@@ -9,7 +9,7 @@ export const siteConfig = {
   tagline: 'Photography · Films · Stories',
   description:
     'Shuvo Khan is a photographer and filmmaker documenting weddings, portraits and commercial stories with a cinematic, editorial eye.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
   location: 'Dhaka, Bangladesh',
   email: 'mdshuvoalamin93@gmail.com',
   phone: '+880 1930543067',
