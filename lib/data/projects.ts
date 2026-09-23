@@ -27,8 +27,8 @@ const seeds: Seed[] = [
     slug: 'wedding-rangpur',
     category: 'wedding',
     year: 2026,
-    location: 'Rangpur, Bangladesh',
-    client: 'Mithi & Rafiul',
+    location: 'Pirgachaha, Rangpur',
+    client: 'Mithi & Imtiaz',
     description:
       'A cinematic documentation of the wedding day — from the quiet hours of preparation to the last dance under string lights. Shot across three venues over two days, balancing candid reportage with a handful of directed portraits.',
     featured: true,
@@ -53,7 +53,7 @@ const seeds: Seed[] = [
     slug: 'fashion-monsoon-collection',
     category: 'fashion',
     year: 2026,
-    location: "Cox's Bazar, Bangladesh",
+    location: "Rangpur, Bangladesh",
     client: 'Aranya Studio',
     description:
       'A seasonal lookbook shot on location during the first monsoon rains, leaning into texture, movement and natural light rather than a controlled set.',
@@ -100,12 +100,12 @@ const seeds: Seed[] = [
      images: ['tarikul-raana-HwSXA03WH8o-unsplash','img_51','md-emam-hossain-ripon-ZIOw-4LHIGY-unsplash','kamrul-hussain-aSt2n5Oyp0k-unsplash','ashraful-haque-akash-5QTAbs-MBfE-unsplash',],
   },
   {
-    title: 'Wedding — Pirgachha,Rangpur',
-    slug: 'wedding-sylhet-garden',
+    title: 'Wedding — Pirgachha, Rangpur',
+    slug: 'wedding-Pirgachha, Rangpur',
     category: 'wedding',
     year: 2025,
-    location: 'Sylhet, Bangladesh',
-    client: 'Meherun & Tanvir',
+    location: 'Rangpur, Bangladesh',
+    client: 'Richi & Riyad',
     description:
       'An outdoor tea-garden ceremony shot at golden hour, with an emphasis on the surrounding landscape as much as the couple.',
     featured: true,

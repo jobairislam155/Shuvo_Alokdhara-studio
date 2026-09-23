@@ -3,21 +3,18 @@
 import { useState } from 'react';
 import { Container } from '@/components/ui/Container';
 import { VideoPlayer } from './VideoPlayer';
-import { duotonePlate } from '@/lib/data/placeholder-art';
 import { Button } from '@/components/ui/Button';
-import { cldVideo } from '@/lib/cloudinary';
+import { cldVideo, cldVideoPoster } from '@/lib/cloudinary';
 
-const poster = duotonePlate(
-  'showreel-2026',
-  ['#161410', '#B08D57'],
-  'Showreel',
-  '2026'
-);
+/** Cloudinary public ID of the showreel video. */
+const SHOWREEL_VIDEO_ID = 'Mithy_apu_teaser';
+
+const poster = cldVideoPoster(SHOWREEL_VIDEO_ID);
 
 export function Showreel({ videoUrl: customVideoUrl, poster: customPoster }: { videoUrl?: string; poster?: string }) {
   const [playing, setPlaying] = useState(false);
 
-  const videoUrl = customVideoUrl ?? cldVideo('Mithy_apu_teaser');
+  const videoUrl = customVideoUrl ?? cldVideo(SHOWREEL_VIDEO_ID);
 
   return (
     <section className="bg-ink section-y">

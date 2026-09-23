@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const portrait = isCloudinaryConfigured
-  ? cldImage('WhatsApp_Image_2025-10-30_at_04.17.28_168ac321', { width: 1200, height: 1500, crop: 'fill', gravity: 'face' })
+  ? cldImage('img57', { width: 1200, height: 1500, crop: 'fill', gravity: 'face' })
   : duotonePlate('about-portrait', ['#1c1f22', '#8a97a3'], siteConfig.name, 'Portrait');
 
 export default function AboutPage() {

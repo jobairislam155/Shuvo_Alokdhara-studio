@@ -1,5 +1,6 @@
 import { Service } from '@/types';
 import { duotonePlate } from './placeholder-art';
+import { cldImage, isCloudinaryConfigured } from '@/lib/cloudinary';
 
 interface Seed {
   title: string;
@@ -10,13 +11,21 @@ interface Seed {
   price: string;
   badge?: string;
   note: string;
+  /**
+   * Your real Cloudinary photo for this package, as its public ID
+   * (Media Library → click the photo → copy Public ID). Leave empty
+   * to keep the placeholder gradient.
+   * Example: photo: 'img30'
+   */
+  photo?: string;
 }
 
 const seeds: Seed[] = [
   {
     title: 'Engagement / Pre-Wedding Package',
     slug: 'engagement-pre-wedding-package',
-    price: 'BDT 12,000.00',
+    price: 'BDT 8,000.00',
+    photo: 'img70',
     description: '💍 Romantic Couple Session',
     deliverables: [
       '👤 1 Photographer',
@@ -31,7 +40,8 @@ const seeds: Seed[] = [
   {
     title: 'Wedding Photo Basic Package',
     slug: 'wedding-photo-basic-package',
-    price: 'BDT 9,000.00',
+    price: 'BDT 5,000.00',
+    photo: 'img71',
     description: '✨ Complete Wedding Day Coverage',
     deliverables: [
       '👤 1 Professional Photographer',
@@ -47,7 +57,8 @@ const seeds: Seed[] = [
   {
     title: 'Wedding Photo + Video Basic Package',
     slug: 'wedding-photo-video-basic-package',
-    price: 'BDT 14,000.00',
+    price: 'BDT 10,000.00',
+    photo: 'img72',
     description: '✨ Premium Coverage',
     deliverables: [
       '👤 1 Photographer',
@@ -64,7 +75,8 @@ const seeds: Seed[] = [
   {
     title: 'Wedding Premium Package',
     slug: 'wedding-premium-package',
-    price: 'BDT 22,000.00',
+    price: 'BDT 12,000.00',
+    photo: 'img73_1',
     description: '✨ Premium Wedding Experience',
     deliverables: [
       '👤 2 Photographers',
@@ -82,8 +94,9 @@ const seeds: Seed[] = [
   {
     title: 'Wedding Luxury Package',
     slug: 'wedding-luxury-package',
-    price: 'BDT 32,000.00',
+    price: 'BDT 15,000.00',
     badge: 'Drone Included',
+    photo: 'img74',
     description: '✨ Luxury Cinematic Wedding Coverage',
     deliverables: [
       '👤 2 Photographers',
@@ -103,7 +116,8 @@ const seeds: Seed[] = [
   {
     title: 'Travel Photography Package',
     slug: 'travel-photography-package',
-    price: 'BDT 10,000.00',
+    price: 'BDT 8,000.00',
+    photo: 'img75',
     description: '🌍 Destination & Travel Storytelling',
     deliverables: [
       '👤 2 Photographers',
@@ -121,7 +135,8 @@ const seeds: Seed[] = [
   {
     title: 'Fashion Photography Package',
     slug: 'fashion-photography-package',
-    price: 'BDT 12,000.00',
+    price: 'BDT 8,000.00',
+    photo: 'img80',
     description: '👗 Editorial Fashion Shoot',
     deliverables: [
       '👤 2 Photographer',
@@ -139,6 +154,7 @@ const seeds: Seed[] = [
     title: 'Product Launch Package',
     slug: 'product-launch-package',
     price: 'BDT 8,000.00',
+    photo: 'img79',
     description: '🚀 Product Launch Coverage',
     deliverables: [
       '👤 2 Photographer',
@@ -159,7 +175,10 @@ export const services: Service[] = seeds.map((seed, index) => ({
   slug: seed.slug,
   description: seed.description,
   deliverables: seed.deliverables,
-  image: duotonePlate(seed.slug, seed.tone, seed.title),
+  image:
+    seed.photo && isCloudinaryConfigured
+      ? cldImage(seed.photo, { width: 900, height: 675 })
+      : duotonePlate(seed.slug, seed.tone, seed.title),
   cover_tone: seed.tone,
   price: seed.price,
   badge: seed.badge,

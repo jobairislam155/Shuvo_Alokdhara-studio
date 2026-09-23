@@ -1,9 +1,9 @@
-# Kai Asher — Photography & Videography Studio
+# Shuvo Alokdhara — Photography & Videography Studio
 
 A cinematic, production-ready portfolio website for a photographer/videographer, built with
 Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, Supabase and Cloudinary.
 
-The brand name **Kai Asher** is a placeholder — see [Rebranding](#rebranding) to change it in one place.
+The brand name **Shuvo Alokdhara** is a placeholder — see [Rebranding](#rebranding) to change it in one place.
 
 ## Table of Contents
 

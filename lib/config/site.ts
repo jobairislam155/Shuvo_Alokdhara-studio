@@ -10,7 +10,7 @@ export const siteConfig = {
   description:
     'Shuvo Khan is a photographer and filmmaker documenting weddings, portraits and commercial stories with a cinematic, editorial eye.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-  location: 'Dhaka, Bangladesh',
+  location: 'Rangpur, Bangladesh',
   email: 'mdshuvoalamin93@gmail.com',
   phone: '+880 1930543067',
   ogImage: '/og-image.png',
@@ -26,8 +26,8 @@ export const mainNav = [
 ];
 
 export const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'Facebook', href: 'https://facebook.com' },
+  { label: 'Instagram', href: 'https://www.instagram.com/shuvo_al_amin/' },
+  { label: 'Facebook', href: 'https://www.facebook.com/shuvoalokdhara' },
   { label: 'YouTube', href: 'https://youtube.com' },
 ];
 

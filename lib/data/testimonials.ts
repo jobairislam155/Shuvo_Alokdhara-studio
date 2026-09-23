@@ -3,7 +3,7 @@ import { Testimonial } from '@/types';
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    client_name: 'Anika & Rafi',
+    client_name: 'Mithi & Imtiaz',
     project_type: 'Wedding',
     testimonial:
       "Shuvo disappeared into the day in the best way — we forgot we were being photographed. The film still makes us cry, in a good way.",
@@ -11,7 +11,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: '2',
-    client_name: 'Meherun Chowdhury',
+    client_name: 'Richi',
     project_type: 'Portrait',
     testimonial:
       'I have never felt more like myself in front of a camera. Patient, precise, and somehow made a studio session feel calm.',
@@ -19,7 +19,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: '3',
-    client_name: 'Anthem Goods',
+    client_name: 'Imtiaz',
     project_type: 'Commercial',
     testimonial:
       'The brand shoot came back better than our mood board. Fast turnaround without ever feeling rushed on set.',
@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: '4',
-    client_name: 'Horizon Summit',
+    client_name: 'Riyad',
     project_type: 'Event',
     testimonial:
       'We had a same-day highlight reel ready before the closing keynote finished. Genuinely impressive under pressure.',
@@ -35,10 +35,10 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: '5',
-    client_name: 'Shoreline Resorts',
-    project_type: 'Commercial',
+    client_name: 'Richi & Riyad',
+    project_type: 'Wedding',
     testimonial:
-      'Every frame looked like it belonged in a travel magazine. Our booking page conversion noticeably improved after the shoot.',
+      'The whole shoot was a dream come true. We had a great time shooting the wedding, and the film was a huge hit.',
     published: true,
   },
 ];
