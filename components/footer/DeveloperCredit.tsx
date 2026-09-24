@@ -52,7 +52,7 @@ export function DeveloperCredit() {
 
   return (
     <>
-      <p className="flex flex-wrap items-center gap-x-1.5">
+      <p className="flex flex-wrap items-center justify-center gap-x-1.5 md:justify-start">
         <span>Developed by:</span>
         {developer.portfolio ? (
           <a

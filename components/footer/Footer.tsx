@@ -96,7 +96,7 @@ export function Footer() {
           </div>
 
           {/* Right — copyright */}
-          <p className="flex items-center justify-center gap-3 md:justify-self-end md:justify-end">
+          <p className="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-self-end md:justify-end md:gap-3">
             <BrandLogo variant="mark" decorative className="h-5 w-auto" />
             <span>
               Copyright © {new Date().getFullYear()} {siteConfig.studio}. All rights reserved.
