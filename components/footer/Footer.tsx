@@ -82,21 +82,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-3 border-t border-ink-400 pt-5 font-sans text-xs text-ink-200 md:grid-cols-3 md:items-center">
-          {/* Left corner — developer credit */}
+        <div className="mt-10 grid grid-cols-1 gap-3 border-t border-ink-400 pt-5 text-center font-sans text-xs text-ink-200 md:grid-cols-3 md:items-center md:text-left">
+          {/* Left corner — admin */}
           <div className="md:justify-self-start">
-            <DeveloperCredit />
-          </div>
-
-          {/* Middle — admin */}
-          <div className="md:justify-self-center">
             <Link href="/admin" className="link-underline">
               Studio Admin
             </Link>
           </div>
 
+          {/* Middle — developer credit */}
+          <div className="md:justify-self-center">
+            <DeveloperCredit />
+          </div>
+
           {/* Right — copyright */}
-          <p className="flex items-center gap-3 md:justify-self-end">
+          <p className="flex items-center justify-center gap-3 md:justify-self-end md:justify-end">
             <BrandLogo variant="mark" decorative className="h-5 w-auto" />
             <span>
               Copyright © {new Date().getFullYear()} {siteConfig.studio}. All rights reserved.

@@ -101,7 +101,7 @@ const seeds: Seed[] = [
   },
   {
     title: 'Wedding — Pirgachha, Rangpur',
-    slug: 'wedding-Pirgachha, Rangpur',
+    slug: 'wedding-pirgachha-rangpur',
     category: 'wedding',
     year: 2025,
     location: 'Rangpur, Bangladesh',
